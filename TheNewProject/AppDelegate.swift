@@ -6,6 +6,9 @@
 //
 
 import UIKit
+#if DEBUG
+import FPSLabel
+#endif
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,14 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        #if DEBUG
+        FPSLabel.install(on: self.window)
+        #endif
         
         if SYSTEM_VERSION_LESS_THAN(version: "13.0") {
 //            let taskDetailViewController = TaskDetailViewController(nibName: "TaskDetailViewController", bundle: nil)
-//            let loginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+//            let loginViewController = LoginViewController()
 ////            let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-//            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window = UIWindow(frame: UIScreen.main.bounds)
 //            self.window?.rootViewController = loginViewController
-//            self.window?.makeKeyAndVisible()
+            self.window?.makeKeyAndVisible()
         }
         return true
     }

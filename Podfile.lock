@@ -1,4 +1,5 @@
 PODS:
+  - FPSLabel (1.0.1)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
     - PINCache/Core (= 3.0.3)
@@ -45,6 +46,7 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - FPSLabel
   - RxCocoa (= 6.2.0)
   - RxGesture
   - RxSwift (= 6.2.0)
@@ -52,6 +54,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - FPSLabel
     - PINCache
     - PINOperation
     - PINRemoteImage
@@ -62,6 +65,7 @@ SPEC REPOS:
     - Texture
 
 SPEC CHECKSUMS:
+  FPSLabel: a6386de76a8fa767102bcb2c18b7c605a3ac3d75
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
@@ -71,6 +75,6 @@ SPEC CHECKSUMS:
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   Texture: 2e8ab2519452515f7f5a520f5a8f7e0a413abfa3
 
-PODFILE CHECKSUM: 7c1cd3e448563c161185d665646c7c5ef4ec407e
+PODFILE CHECKSUM: 16c330596d3379c468f4e8973a2be96c12db19e0
 
 COCOAPODS: 1.11.3

@@ -10,6 +10,8 @@ target 'TheNewProject' do
   pod 'RxCocoa', '6.2.0'
   pod 'RxGesture'
   
+  pod 'FPSLabel'
+  
   # UI
   pod 'Texture'
   
