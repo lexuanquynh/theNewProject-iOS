@@ -1,4 +1,6 @@
 PODS:
+  - ASTextFieldNode (0.2.1):
+    - Texture
   - FPSLabel (1.0.1)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
@@ -46,6 +48,7 @@ PODS:
     - Texture/Core
 
 DEPENDENCIES:
+  - ASTextFieldNode (from `https://github.com/pocketlabs/ASTextFieldNode.git`)
   - FPSLabel
   - RxCocoa (= 6.2.0)
   - RxGesture
@@ -64,7 +67,17 @@ SPEC REPOS:
     - RxSwift
     - Texture
 
+EXTERNAL SOURCES:
+  ASTextFieldNode:
+    :git: https://github.com/pocketlabs/ASTextFieldNode.git
+
+CHECKOUT OPTIONS:
+  ASTextFieldNode:
+    :commit: b24fb99525c49e93b3e27014f5853a3631d1a429
+    :git: https://github.com/pocketlabs/ASTextFieldNode.git
+
 SPEC CHECKSUMS:
+  ASTextFieldNode: 0e4c6db6d8b123001d87f7e6ccebb9a8b4ca8117
   FPSLabel: a6386de76a8fa767102bcb2c18b7c605a3ac3d75
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
@@ -75,6 +88,6 @@ SPEC CHECKSUMS:
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   Texture: 2e8ab2519452515f7f5a520f5a8f7e0a413abfa3
 
-PODFILE CHECKSUM: 16c330596d3379c468f4e8973a2be96c12db19e0
+PODFILE CHECKSUM: db58c1c510e893d9fbc7c41e2f12c50b20992662
 
 COCOAPODS: 1.11.3

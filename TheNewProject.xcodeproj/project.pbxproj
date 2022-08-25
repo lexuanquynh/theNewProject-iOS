@@ -75,6 +75,18 @@
 		326CB1B728B6319800CC716B /* TheNewProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CB1B628B6319800CC716B /* TheNewProjectTests.swift */; };
 		326CB1C128B6319800CC716B /* TheNewProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CB1C028B6319800CC716B /* TheNewProjectUITests.swift */; };
 		326CB1C328B6319800CC716B /* TheNewProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CB1C228B6319800CC716B /* TheNewProjectUITestsLaunchTests.swift */; };
+		32F16BFD28B772C00073C47D /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */; };
+		32F16BFE28B772C00073C47D /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */; };
+		32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */; };
+		32F16C0028B772C00073C47D /* ASBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF428B772C00073C47D /* ASBinder.swift */; };
+		32F16C0128B772C00073C47D /* ASButtonNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF528B772C00073C47D /* ASButtonNode+Rx.swift */; };
+		32F16C0228B772C00073C47D /* ASControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF628B772C00073C47D /* ASControlTarget.swift */; };
+		32F16C0328B772C00073C47D /* ASDisplayNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF728B772C00073C47D /* ASDisplayNode+Rx.swift */; };
+		32F16C0428B772C00073C47D /* RxASEditableTextNodeDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF828B772C00073C47D /* RxASEditableTextNodeDelegateProxy.swift */; };
+		32F16C0528B772C00073C47D /* ASNetworkImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF928B772C00073C47D /* ASNetworkImageNode+Rx.swift */; };
+		32F16C0628B772C00073C47D /* Driver+ASSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BFA28B772C00073C47D /* Driver+ASSubscription.swift */; };
+		32F16C0728B772C00073C47D /* ASTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BFB28B772C00073C47D /* ASTextNode+Rx.swift */; };
+		32F16C0828B772C00073C47D /* ASControlNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BFC28B772C00073C47D /* ASControlNode+Rx.swift */; };
 		A0A28A2817DE59D007F9FD2A /* Pods_TheNewProject_TheNewProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7534B0D5F6BC863BA5DBEA23 /* Pods_TheNewProject_TheNewProjectUITests.framework */; };
 		DC0C86FD72AD98802F60992E /* Pods_TheNewProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E44B1650FA9E3557EBC3BA /* Pods_TheNewProject.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +181,18 @@
 		326CB1BC28B6319800CC716B /* TheNewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheNewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326CB1C028B6319800CC716B /* TheNewProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNewProjectUITests.swift; sourceTree = "<group>"; };
 		326CB1C228B6319800CC716B /* TheNewProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNewProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
+		32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Rx.swift"; sourceTree = "<group>"; };
+		32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode2+Rx.swift"; sourceTree = "<group>"; };
+		32F16BF428B772C00073C47D /* ASBinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASBinder.swift; sourceTree = "<group>"; };
+		32F16BF528B772C00073C47D /* ASButtonNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASButtonNode+Rx.swift"; sourceTree = "<group>"; };
+		32F16BF628B772C00073C47D /* ASControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASControlTarget.swift; sourceTree = "<group>"; };
+		32F16BF728B772C00073C47D /* ASDisplayNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+Rx.swift"; sourceTree = "<group>"; };
+		32F16BF828B772C00073C47D /* RxASEditableTextNodeDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxASEditableTextNodeDelegateProxy.swift; sourceTree = "<group>"; };
+		32F16BF928B772C00073C47D /* ASNetworkImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASNetworkImageNode+Rx.swift"; sourceTree = "<group>"; };
+		32F16BFA28B772C00073C47D /* Driver+ASSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+ASSubscription.swift"; sourceTree = "<group>"; };
+		32F16BFB28B772C00073C47D /* ASTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+Rx.swift"; sourceTree = "<group>"; };
+		32F16BFC28B772C00073C47D /* ASControlNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASControlNode+Rx.swift"; sourceTree = "<group>"; };
 		582B057C569EC91B55B5F49C /* Pods-TheNewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheNewProject.debug.xcconfig"; path = "Target Support Files/Pods-TheNewProject/Pods-TheNewProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5C1154DD522CAD68A309D55C /* Pods-TheNewProject-TheNewProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheNewProject-TheNewProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheNewProject-TheNewProjectUITests/Pods-TheNewProject-TheNewProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7534B0D5F6BC863BA5DBEA23 /* Pods_TheNewProject_TheNewProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheNewProject_TheNewProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -634,6 +658,7 @@
 		326CB19E28B6319700CC716B /* TheNewProject */ = {
 			isa = PBXGroup;
 			children = (
+				32F16BEF28B772C00073C47D /* RxCocoa-Texture */,
 				3203AE0A28B67BFD001B6952 /* Data */,
 				3203ADF628B63EA6001B6952 /* AppConfig */,
 				3203ADE328B63DFB001B6952 /* Extension */,
@@ -668,6 +693,33 @@
 				326CB1C228B6319800CC716B /* TheNewProjectUITestsLaunchTests.swift */,
 			);
 			path = TheNewProjectUITests;
+			sourceTree = "<group>";
+		};
+		32F16BEF28B772C00073C47D /* RxCocoa-Texture */ = {
+			isa = PBXGroup;
+			children = (
+				32F16BF028B772C00073C47D /* Classes */,
+			);
+			path = "RxCocoa-Texture";
+			sourceTree = "<group>";
+		};
+		32F16BF028B772C00073C47D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */,
+				32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */,
+				32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */,
+				32F16BF428B772C00073C47D /* ASBinder.swift */,
+				32F16BF528B772C00073C47D /* ASButtonNode+Rx.swift */,
+				32F16BF628B772C00073C47D /* ASControlTarget.swift */,
+				32F16BF728B772C00073C47D /* ASDisplayNode+Rx.swift */,
+				32F16BF828B772C00073C47D /* RxASEditableTextNodeDelegateProxy.swift */,
+				32F16BF928B772C00073C47D /* ASNetworkImageNode+Rx.swift */,
+				32F16BFA28B772C00073C47D /* Driver+ASSubscription.swift */,
+				32F16BFB28B772C00073C47D /* ASTextNode+Rx.swift */,
+				32F16BFC28B772C00073C47D /* ASControlNode+Rx.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		5D08C3C3301E92C416E28912 /* Pods */ = {
@@ -932,8 +984,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F16C0028B772C00073C47D /* ASBinder.swift in Sources */,
 				3203ADF128B63DFB001B6952 /* UIImage+Extension.swift in Sources */,
 				3203ADC428B63CEF001B6952 /* AbstractURLSession.swift in Sources */,
+				32F16C0428B772C00073C47D /* RxASEditableTextNodeDelegateProxy.swift in Sources */,
+				32F16C0828B772C00073C47D /* ASControlNode+Rx.swift in Sources */,
 				3203ADE028B63D23001B6952 /* AdaptiveLayoutExtension.swift in Sources */,
 				3203AE2928B70E26001B6952 /* AbstractAuthRemoteDataSource.swift in Sources */,
 				3203AD9E28B63C7E001B6952 /* AbstractRemoteDataSource.swift in Sources */,
@@ -948,18 +1003,22 @@
 				3203AE2728B70E0D001B6952 /* AbstractAuthLocalDataSource.swift in Sources */,
 				3203ADEF28B63DFB001B6952 /* UIView+Extensions.swift in Sources */,
 				3203ADF028B63DFB001B6952 /* UILabel+Extension.swift in Sources */,
+				32F16C0728B772C00073C47D /* ASTextNode+Rx.swift in Sources */,
 				3203AE1828B67D11001B6952 /* AbstractAuthViewModel.swift in Sources */,
 				3203ADD028B63CEF001B6952 /* ImageDownloader.swift in Sources */,
 				3203ADFF28B63EA6001B6952 /* ServerConfig.swift in Sources */,
 				3203AE0128B63EA6001B6952 /* ConfigComponents.swift in Sources */,
 				326CB1A428B6319700CC716B /* ViewController.swift in Sources */,
+				32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */,
 				3203AD8A28B63A10001B6952 /* BaseViewController.swift in Sources */,
 				3203ADE128B63D23001B6952 /* AdaptiveLayoutConstraint.swift in Sources */,
+				32F16C0528B772C00073C47D /* ASNetworkImageNode+Rx.swift in Sources */,
 				3203ADCF28B63CEF001B6952 /* AbstractDownloaderClient.swift in Sources */,
 				3203AE1E28B67E04001B6952 /* AuthRepository.swift in Sources */,
 				3203AD8E28B63B9C001B6952 /* Coordinator.swift in Sources */,
 				3203AD9628B63C24001B6952 /* AbstractUsecase.swift in Sources */,
 				3203ADFE28B63EA6001B6952 /* DeepLinkHandler.swift in Sources */,
+				32F16BFD28B772C00073C47D /* ASEditableTextNode+Rx.swift in Sources */,
 				3203ADC828B63CEF001B6952 /* NetworkOperation.swift in Sources */,
 				3203AE2228B70DCB001B6952 /* AuthRemoteDataSource.swift in Sources */,
 				3203ADD228B63CEF001B6952 /* AbstractDatabaseClient.swift in Sources */,
@@ -968,9 +1027,11 @@
 				326CB1A028B6319700CC716B /* AppDelegate.swift in Sources */,
 				3203ADD428B63CEF001B6952 /* AbstractUserSessionDataClient.swift in Sources */,
 				3203ADC628B63CEF001B6952 /* ApiClient.swift in Sources */,
+				32F16C0128B772C00073C47D /* ASButtonNode+Rx.swift in Sources */,
 				3203ADF528B63DFB001B6952 /* Codable+Extension.swift in Sources */,
 				3203ADD528B63CEF001B6952 /* AbstractLocalStorageIntereactor.swift in Sources */,
 				3203AD9228B63BF8001B6952 /* AbstractViewModel.swift in Sources */,
+				32F16C0228B772C00073C47D /* ASControlTarget.swift in Sources */,
 				326CB1A228B6319700CC716B /* SceneDelegate.swift in Sources */,
 				3203ADF328B63DFB001B6952 /* UIViewController+Extension.swift in Sources */,
 				3203AE0028B63EA6001B6952 /* AppTheme.swift in Sources */,
@@ -979,8 +1040,10 @@
 				3203ADE228B63D23001B6952 /* CGFloat+Extension.swift in Sources */,
 				3203ADDF28B63D23001B6952 /* AppLogger.swift in Sources */,
 				3203AE0628B66DF9001B6952 /* LoginViewController.swift in Sources */,
+				32F16BFE28B772C00073C47D /* ASImageNode+Rx.swift in Sources */,
 				3203AE1128B67C6C001B6952 /* AbstractAuthUsecase.swift in Sources */,
 				3203ADC928B63CEF001B6952 /* QueueManager.swift in Sources */,
+				32F16C0628B772C00073C47D /* Driver+ASSubscription.swift in Sources */,
 				3203ADCC28B63CEF001B6952 /* DownloadDataParser.swift in Sources */,
 				3203ADCB28B63CEF001B6952 /* Downloader.swift in Sources */,
 				3203AD9928B63C50001B6952 /* AbstractRepository.swift in Sources */,
@@ -992,6 +1055,7 @@
 				3203AE1A28B67D3A001B6952 /* AuthViewModel.swift in Sources */,
 				3203ADD328B63CEF001B6952 /* KVLocalSorageIntereactor.swift in Sources */,
 				3203ADCA28B63CEF001B6952 /* ApiRequest.swift in Sources */,
+				32F16C0328B772C00073C47D /* ASDisplayNode+Rx.swift in Sources */,
 				3203AE0E28B67C2A001B6952 /* AuthUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1175,6 +1239,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1203,6 +1268,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
