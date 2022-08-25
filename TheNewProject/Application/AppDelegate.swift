@@ -43,16 +43,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //make app config
         buildAppConfig()
-        #if DEBUG
+#if DEBUG
         FPSLabel.install(on: self.window)
-        #endif
+#endif
         
         if SYSTEM_VERSION_LESS_THAN(version: "13.0") {
-//            let taskDetailViewController = TaskDetailViewController(nibName: "TaskDetailViewController", bundle: nil)
-//            let loginViewController = LoginViewController()
-////            let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            let navigationController = UINavigationController()
             self.window = UIWindow(frame: UIScreen.main.bounds)
-//            self.window?.rootViewController = loginViewController
+            window?.rootViewController = navigationController
+            let rootCoordinator = AuthCoordinator(navigationController: navigationController)
+            rootCoordinator.start()
             self.window?.makeKeyAndVisible()
         }
         return true

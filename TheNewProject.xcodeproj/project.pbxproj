@@ -234,6 +234,7 @@
 		3203AD8628B639E4001B6952 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				329B1AFA28B7787500BDAD9B /* Storyboard */,
 				3203AD8F28B63BD2001B6952 /* ViewModel */,
 				3203AD8728B639F0001B6952 /* View */,
 			);
@@ -658,6 +659,7 @@
 		326CB19E28B6319700CC716B /* TheNewProject */ = {
 			isa = PBXGroup;
 			children = (
+				329B1AF928B7785900BDAD9B /* Application */,
 				32F16BEF28B772C00073C47D /* RxCocoa-Texture */,
 				3203AE0A28B67BFD001B6952 /* Data */,
 				3203ADF628B63EA6001B6952 /* AppConfig */,
@@ -667,12 +669,8 @@
 				3203AD9328B63C0F001B6952 /* Domain */,
 				3203AD8B28B63B84001B6952 /* Route */,
 				3203AD8628B639E4001B6952 /* Presentation */,
-				326CB19F28B6319700CC716B /* AppDelegate.swift */,
-				326CB1A128B6319700CC716B /* SceneDelegate.swift */,
 				326CB1A328B6319700CC716B /* ViewController.swift */,
-				326CB1A528B6319700CC716B /* Main.storyboard */,
 				326CB1A828B6319800CC716B /* Assets.xcassets */,
-				326CB1AA28B6319800CC716B /* LaunchScreen.storyboard */,
 				326CB1AD28B6319800CC716B /* Info.plist */,
 			);
 			path = TheNewProject;
@@ -693,6 +691,24 @@
 				326CB1C228B6319800CC716B /* TheNewProjectUITestsLaunchTests.swift */,
 			);
 			path = TheNewProjectUITests;
+			sourceTree = "<group>";
+		};
+		329B1AF928B7785900BDAD9B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				326CB19F28B6319700CC716B /* AppDelegate.swift */,
+				326CB1A128B6319700CC716B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		329B1AFA28B7787500BDAD9B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				326CB1A528B6319700CC716B /* Main.storyboard */,
+				326CB1AA28B6319800CC716B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		32F16BEF28B772C00073C47D /* RxCocoa-Texture */ = {

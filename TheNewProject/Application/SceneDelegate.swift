@@ -22,18 +22,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-
+        
         guard let _window = window else { return }
         _window.windowScene = windowScene
-
+        
         let navigationController = UINavigationController()
         _window.rootViewController = navigationController
         let rootCoordinator = AuthCoordinator(navigationController: navigationController)
         rootCoordinator.start()
         
-        #if DEBUG
+#if DEBUG
         FPSLabel.install(on: self.window)
-        #endif
+#endif
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
