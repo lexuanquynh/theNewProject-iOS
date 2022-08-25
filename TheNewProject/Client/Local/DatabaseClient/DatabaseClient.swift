@@ -11,7 +11,7 @@ import RxSwift
 
 class DatabaseClient: AbstractDatabaseClient {
     
-    static let shared = DatabaseClient(interactor: UserDefaults.shared as! AbstractLocalStorageIntereactor, schedular: ConcurrentDispatchQueueScheduler(qos: .utility))
+    static let shared = DatabaseClient(interactor: UserDefaults.shared , schedular: ConcurrentDispatchQueueScheduler(qos: .utility))
     var interactor: AbstractLocalStorageIntereactor
     let schedular: SchedulerType
     

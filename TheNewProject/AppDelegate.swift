@@ -19,8 +19,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UIDevice.current.systemVersion.compare(version, options: .numeric) == .orderedAscending
     }
 
+    func buildAppConfig() -> Void {
+        let themeColors = Colors(primaryDark: .systemBlue, primaryLight: .systemOrange, secondaryDark: .black, secondaryLight: .systemBlue, textColorDark: .black, textColorLight: .white, primaryBackgroundColor: .white, secondaryBackgroundColor: .blue, disabledTextColor: .lightGray, whiteTransparentColor: .init(white: 1, alpha: 0.5))
+        
+        let themeFonts = Fonts()
+        
+        let theme = AppTheme.Builder()
+            .addColors(colors: themeColors)
+            .addFonts(fonts: themeFonts)
+            .build()
+        
+        //Singleton with builder, commit-> no return
+        AppConfig.Builder()
+//            .setServerConfig(serverConfig: serverConfig)
+            .setThemeType(themeType: .NORMAL)
+            .setNormalTheme(theme: theme)
+            .setDarkTheme(theme: theme)
+            .setLocale(local: "en")
+            .commit()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //make app config
+        buildAppConfig()
         #if DEBUG
         FPSLabel.install(on: self.window)
         #endif

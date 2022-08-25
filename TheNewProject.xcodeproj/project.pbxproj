@@ -55,6 +55,17 @@
 		3203AE0128B63EA6001B6952 /* ConfigComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203ADFB28B63EA6001B6952 /* ConfigComponents.swift */; };
 		3203AE0228B63EA6001B6952 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203ADFC28B63EA6001B6952 /* AppConfig.swift */; };
 		3203AE0628B66DF9001B6952 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE0528B66DF9001B6952 /* LoginViewController.swift */; };
+		3203AE0928B675A7001B6952 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE0828B675A6001B6952 /* AuthCoordinator.swift */; };
+		3203AE0E28B67C2A001B6952 /* AuthUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE0D28B67C2A001B6952 /* AuthUsecase.swift */; };
+		3203AE1128B67C6C001B6952 /* AbstractAuthUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE1028B67C6C001B6952 /* AbstractAuthUsecase.swift */; };
+		3203AE1428B67CA3001B6952 /* AbstractAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE1328B67CA3001B6952 /* AbstractAuthRepository.swift */; };
+		3203AE1828B67D11001B6952 /* AbstractAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE1728B67D11001B6952 /* AbstractAuthViewModel.swift */; };
+		3203AE1A28B67D3A001B6952 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE1928B67D3A001B6952 /* AuthViewModel.swift */; };
+		3203AE1E28B67E04001B6952 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE1D28B67E04001B6952 /* AuthRepository.swift */; };
+		3203AE2228B70DCB001B6952 /* AuthRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE2128B70DCB001B6952 /* AuthRemoteDataSource.swift */; };
+		3203AE2428B70DDF001B6952 /* AuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE2328B70DDF001B6952 /* AuthLocalDataSource.swift */; };
+		3203AE2728B70E0D001B6952 /* AbstractAuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE2628B70E0D001B6952 /* AbstractAuthLocalDataSource.swift */; };
+		3203AE2928B70E26001B6952 /* AbstractAuthRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203AE2828B70E26001B6952 /* AbstractAuthRemoteDataSource.swift */; };
 		326CB1A028B6319700CC716B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CB19F28B6319700CC716B /* AppDelegate.swift */; };
 		326CB1A228B6319700CC716B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CB1A128B6319700CC716B /* SceneDelegate.swift */; };
 		326CB1A428B6319700CC716B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CB1A328B6319700CC716B /* ViewController.swift */; };
@@ -134,6 +145,17 @@
 		3203ADFB28B63EA6001B6952 /* ConfigComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigComponents.swift; sourceTree = "<group>"; };
 		3203ADFC28B63EA6001B6952 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		3203AE0528B66DF9001B6952 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3203AE0828B675A6001B6952 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		3203AE0D28B67C2A001B6952 /* AuthUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUsecase.swift; sourceTree = "<group>"; };
+		3203AE1028B67C6C001B6952 /* AbstractAuthUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthUsecase.swift; sourceTree = "<group>"; };
+		3203AE1328B67CA3001B6952 /* AbstractAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthRepository.swift; sourceTree = "<group>"; };
+		3203AE1728B67D11001B6952 /* AbstractAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthViewModel.swift; sourceTree = "<group>"; };
+		3203AE1928B67D3A001B6952 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		3203AE1D28B67E04001B6952 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		3203AE2128B70DCB001B6952 /* AuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSource.swift; sourceTree = "<group>"; };
+		3203AE2328B70DDF001B6952 /* AuthLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSource.swift; sourceTree = "<group>"; };
+		3203AE2628B70E0D001B6952 /* AbstractAuthLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthLocalDataSource.swift; sourceTree = "<group>"; };
+		3203AE2828B70E26001B6952 /* AbstractAuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthRemoteDataSource.swift; sourceTree = "<group>"; };
 		326CB19C28B6319700CC716B /* TheNewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheNewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326CB19F28B6319700CC716B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		326CB1A128B6319700CC716B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +236,7 @@
 		3203AD8B28B63B84001B6952 /* Route */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE0728B6759A001B6952 /* Auth */,
 				3203AD8C28B63B92001B6952 /* Coordinator */,
 			);
 			path = Route;
@@ -230,6 +253,7 @@
 		3203AD8F28B63BD2001B6952 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE1528B67CCA001B6952 /* Auth */,
 				3203AD9028B63BDE001B6952 /* Abstraction */,
 			);
 			path = ViewModel;
@@ -238,6 +262,7 @@
 		3203AD9028B63BDE001B6952 /* Abstraction */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE1628B67CF2001B6952 /* Auth */,
 				3203AD9128B63BF8001B6952 /* AbstractViewModel.swift */,
 			);
 			path = Abstraction;
@@ -256,6 +281,7 @@
 		3203AD9428B63C1C001B6952 /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE0F28B67C5B001B6952 /* Auth */,
 				3203AD9528B63C24001B6952 /* AbstractUsecase.swift */,
 			);
 			path = Usecase;
@@ -264,6 +290,7 @@
 		3203AD9728B63C44001B6952 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE1228B67C9B001B6952 /* Auth */,
 				3203AD9828B63C50001B6952 /* AbstractRepository.swift */,
 			);
 			path = Repository;
@@ -272,6 +299,7 @@
 		3203AD9A28B63C67001B6952 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE2528B70E00001B6952 /* Auth */,
 				3203AD9B28B63C71001B6952 /* AbstractLocalDataSource.swift */,
 				3203AD9D28B63C7E001B6952 /* AbstractRemoteDataSource.swift */,
 			);
@@ -473,6 +501,114 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		3203AE0728B6759A001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE0828B675A6001B6952 /* AuthCoordinator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE0A28B67BFD001B6952 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1F28B70DB7001B6952 /* DataSource */,
+				3203AE1B28B67DF3001B6952 /* Repository */,
+				3203AE0B28B67C13001B6952 /* Usecase */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3203AE0B28B67C13001B6952 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE0C28B67C20001B6952 /* Auth */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		3203AE0C28B67C20001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE0D28B67C2A001B6952 /* AuthUsecase.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE0F28B67C5B001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1028B67C6C001B6952 /* AbstractAuthUsecase.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE1228B67C9B001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1328B67CA3001B6952 /* AbstractAuthRepository.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE1528B67CCA001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1928B67D3A001B6952 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE1628B67CF2001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1728B67D11001B6952 /* AbstractAuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE1B28B67DF3001B6952 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1C28B67DFB001B6952 /* Auth */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3203AE1C28B67DFB001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE1D28B67E04001B6952 /* AuthRepository.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE1F28B70DB7001B6952 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE2028B70DC0001B6952 /* Auth */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3203AE2028B70DC0001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE2128B70DCB001B6952 /* AuthRemoteDataSource.swift */,
+				3203AE2328B70DDF001B6952 /* AuthLocalDataSource.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3203AE2528B70E00001B6952 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3203AE2628B70E0D001B6952 /* AbstractAuthLocalDataSource.swift */,
+				3203AE2828B70E26001B6952 /* AbstractAuthRemoteDataSource.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		326CB19328B6319700CC716B = {
 			isa = PBXGroup;
 			children = (
@@ -498,6 +634,7 @@
 		326CB19E28B6319700CC716B /* TheNewProject */ = {
 			isa = PBXGroup;
 			children = (
+				3203AE0A28B67BFD001B6952 /* Data */,
 				3203ADF628B63EA6001B6952 /* AppConfig */,
 				3203ADE328B63DFB001B6952 /* Extension */,
 				3203ADD828B63D23001B6952 /* Components */,
@@ -798,14 +935,20 @@
 				3203ADF128B63DFB001B6952 /* UIImage+Extension.swift in Sources */,
 				3203ADC428B63CEF001B6952 /* AbstractURLSession.swift in Sources */,
 				3203ADE028B63D23001B6952 /* AdaptiveLayoutExtension.swift in Sources */,
+				3203AE2928B70E26001B6952 /* AbstractAuthRemoteDataSource.swift in Sources */,
 				3203AD9E28B63C7E001B6952 /* AbstractRemoteDataSource.swift in Sources */,
+				3203AE0928B675A7001B6952 /* AuthCoordinator.swift in Sources */,
 				3203ADFD28B63EA6001B6952 /* AuthCredential.swift in Sources */,
 				3203ADEE28B63DFB001B6952 /* UIColor+Extension.swift in Sources */,
+				3203AE2428B70DDF001B6952 /* AuthLocalDataSource.swift in Sources */,
 				3203ADD628B63CEF001B6952 /* UserSessionDataClient.swift in Sources */,
 				3203ADC728B63CEF001B6952 /* Parameterizable.swift in Sources */,
+				3203AE1428B67CA3001B6952 /* AbstractAuthRepository.swift in Sources */,
 				3203ADD728B63CEF001B6952 /* KVLocalStorage.swift in Sources */,
+				3203AE2728B70E0D001B6952 /* AbstractAuthLocalDataSource.swift in Sources */,
 				3203ADEF28B63DFB001B6952 /* UIView+Extensions.swift in Sources */,
 				3203ADF028B63DFB001B6952 /* UILabel+Extension.swift in Sources */,
+				3203AE1828B67D11001B6952 /* AbstractAuthViewModel.swift in Sources */,
 				3203ADD028B63CEF001B6952 /* ImageDownloader.swift in Sources */,
 				3203ADFF28B63EA6001B6952 /* ServerConfig.swift in Sources */,
 				3203AE0128B63EA6001B6952 /* ConfigComponents.swift in Sources */,
@@ -813,10 +956,12 @@
 				3203AD8A28B63A10001B6952 /* BaseViewController.swift in Sources */,
 				3203ADE128B63D23001B6952 /* AdaptiveLayoutConstraint.swift in Sources */,
 				3203ADCF28B63CEF001B6952 /* AbstractDownloaderClient.swift in Sources */,
+				3203AE1E28B67E04001B6952 /* AuthRepository.swift in Sources */,
 				3203AD8E28B63B9C001B6952 /* Coordinator.swift in Sources */,
 				3203AD9628B63C24001B6952 /* AbstractUsecase.swift in Sources */,
 				3203ADFE28B63EA6001B6952 /* DeepLinkHandler.swift in Sources */,
 				3203ADC828B63CEF001B6952 /* NetworkOperation.swift in Sources */,
+				3203AE2228B70DCB001B6952 /* AuthRemoteDataSource.swift in Sources */,
 				3203ADD228B63CEF001B6952 /* AbstractDatabaseClient.swift in Sources */,
 				3203AD9C28B63C71001B6952 /* AbstractLocalDataSource.swift in Sources */,
 				3203ADD128B63CEF001B6952 /* DatabaseClient.swift in Sources */,
@@ -834,6 +979,7 @@
 				3203ADE228B63D23001B6952 /* CGFloat+Extension.swift in Sources */,
 				3203ADDF28B63D23001B6952 /* AppLogger.swift in Sources */,
 				3203AE0628B66DF9001B6952 /* LoginViewController.swift in Sources */,
+				3203AE1128B67C6C001B6952 /* AbstractAuthUsecase.swift in Sources */,
 				3203ADC928B63CEF001B6952 /* QueueManager.swift in Sources */,
 				3203ADCC28B63CEF001B6952 /* DownloadDataParser.swift in Sources */,
 				3203ADCB28B63CEF001B6952 /* Downloader.swift in Sources */,
@@ -843,8 +989,10 @@
 				3203ADC528B63CEF001B6952 /* AbstractApiClient.swift in Sources */,
 				3203AE0228B63EA6001B6952 /* AppConfig.swift in Sources */,
 				3203ADCD28B63CEF001B6952 /* AbstractDownloader.swift in Sources */,
+				3203AE1A28B67D3A001B6952 /* AuthViewModel.swift in Sources */,
 				3203ADD328B63CEF001B6952 /* KVLocalSorageIntereactor.swift in Sources */,
 				3203ADCA28B63CEF001B6952 /* ApiRequest.swift in Sources */,
+				3203AE0E28B67C2A001B6952 /* AuthUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
