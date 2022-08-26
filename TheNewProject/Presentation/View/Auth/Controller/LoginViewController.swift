@@ -25,6 +25,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         return node
     }()
     
+    
     lazy var emailNode: ASTextFieldNode = {
         let node = ASTextFieldNode()
         node.keyboardType = .emailAddress
@@ -177,15 +178,15 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     }
     
     //MARK: Authentication Process
-    func authenticateUser() {
+    private func authenticateUser() {
         coordinator?.navigateHomeScreen()
     }
     
-    func forgotPassword() {
+    private func forgotPassword() {
         coordinator?.navigateForgotPasswordScreen()
     }
     
-    func registerNewAccount() {
+    private func registerNewAccount() {
         coordinator?.navigateRegisterScreen()
     }
 }
