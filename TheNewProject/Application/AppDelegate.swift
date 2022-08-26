@@ -43,9 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //make app config
         buildAppConfig()
-#if DEBUG
-        FPSLabel.install(on: self.window)
-#endif
+
         
         if SYSTEM_VERSION_LESS_THAN(version: "13.0") {
             let navigationController = UINavigationController()
@@ -54,6 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let rootCoordinator = AuthCoordinator(navigationController: navigationController)
             rootCoordinator.start()
             self.window?.makeKeyAndVisible()
+#if DEBUG
+        FPSLabel.install(on: self.window)
+#endif
         }
         return true
     }

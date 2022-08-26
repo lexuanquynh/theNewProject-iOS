@@ -1,13 +1,14 @@
 //
-//  AuthCoordinator.swift
+//  HomeCoordinator.swift
 //  TheNewProject
 //
-//  Created by Admintrator Admin on 8/24/22.
+//  Created by Admintrator Admin on 8/26/22.
+//  Copyright © 2022 codetoanbug. All rights reserved.
 //
 
 import UIKit
 
-class AuthCoordinator: Coordinator {
+class HomeCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
@@ -16,21 +17,16 @@ class AuthCoordinator: Coordinator {
     }
 
     func start() {
-        let repository = AuthRepository(
+        let repository = HomeRepository(
                 localDataSource: AuthLocalDataSource(dbClient: DatabaseClient.shared),
                 remoteDataSource: AuthRemoteDataSource(apiClient: ApiClient.shared
             )
         )
-        let usecase = AuthUsecase(repository: repository)
-        let viewModel = AuthViewModel(usecase: usecase)
-        let vc = LoginViewController(viewModel: viewModel)
+        let usecase = HomeUsecase(repository: repository)
+        let viewModel = HomeViewModel(usecase: usecase)
+        let vc = HomeViewController(viewModel: viewModel)
         vc.coordinator = self
         
         navigationController.pushViewController(vc, animated: true)
-    }
-    
-    func navigateHomeScreen() {
-        let homeCoordinator = HomeCoordinator(navigationController: navigationController)
-        homeCoordinator.start()
     }
 }

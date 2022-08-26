@@ -12,7 +12,7 @@ import FPSLabel
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    var rootCoordinator: AuthCoordinator!
     var window: UIWindow?
 
 
@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigationController = UINavigationController()
         _window.rootViewController = navigationController
-        let rootCoordinator = AuthCoordinator(navigationController: navigationController)
+        rootCoordinator = AuthCoordinator(navigationController: navigationController)
         rootCoordinator.start()
         
 #if DEBUG

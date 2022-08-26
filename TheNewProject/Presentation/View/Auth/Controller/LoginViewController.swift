@@ -143,7 +143,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     //MARK: Authentication Process
     func authenticateUser() {
-        
+        coordinator?.navigateHomeScreen()
     }
 }
 
