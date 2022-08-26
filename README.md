@@ -10,6 +10,9 @@ We use Rx and Texture for UI.
 1. Login screen
 <img src="images/login_screen.png" width="350">
 
+1. Home screen
+<img src="images/home_screen.png" width="350">
+
 ## Setup:
 1. Install latest version of xcode
 1. Install cocoa pod (https://stackoverflow.com/questions/20755044/how-do-i-install-cocoapods)
