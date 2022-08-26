@@ -83,6 +83,7 @@
 		329B1B0B28B85D4100BDAD9B /* AbstractHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B0A28B85D4100BDAD9B /* AbstractHomeRepository.swift */; };
 		329B1B0E28B867E400BDAD9B /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B0D28B867E400BDAD9B /* HomeRepository.swift */; };
 		329B1B1128B8682900BDAD9B /* HomeUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1028B8682900BDAD9B /* HomeUsecase.swift */; };
+		329B1B1628B86E7500BDAD9B /* SelfPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */; };
 		32F16BFD28B772C00073C47D /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */; };
 		32F16BFE28B772C00073C47D /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */; };
 		32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */; };
@@ -197,6 +198,7 @@
 		329B1B0A28B85D4100BDAD9B /* AbstractHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractHomeRepository.swift; sourceTree = "<group>"; };
 		329B1B0D28B867E400BDAD9B /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		329B1B1028B8682900BDAD9B /* HomeUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsecase.swift; sourceTree = "<group>"; };
+		329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeViewController.swift; sourceTree = "<group>"; };
 		32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
 		32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Rx.swift"; sourceTree = "<group>"; };
 		32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode2+Rx.swift"; sourceTree = "<group>"; };
@@ -260,6 +262,8 @@
 		3203AD8728B639F0001B6952 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B1428B86E3300BDAD9B /* SelfPractice */,
+				329B1B1228B86E1600BDAD9B /* Home */,
 				3203AE0328B66DCD001B6952 /* Auth */,
 				3203AD8828B639FE001B6952 /* Abstraction */,
 			);
@@ -543,7 +547,6 @@
 			isa = PBXGroup;
 			children = (
 				3203AE0528B66DF9001B6952 /* LoginViewController.swift */,
-				329B1AFB28B859DD00BDAD9B /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -789,6 +792,30 @@
 				329B1B1028B8682900BDAD9B /* HomeUsecase.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		329B1B1228B86E1600BDAD9B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B1328B86E1C00BDAD9B /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		329B1B1328B86E1C00BDAD9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				329B1AFB28B859DD00BDAD9B /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		329B1B1428B86E3300BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */,
+			);
+			path = SelfPractice;
 			sourceTree = "<group>";
 		};
 		32F16BEF28B772C00073C47D /* RxCocoa-Texture */ = {
@@ -1135,6 +1162,7 @@
 				3203ADF528B63DFB001B6952 /* Codable+Extension.swift in Sources */,
 				3203ADD528B63CEF001B6952 /* AbstractLocalStorageIntereactor.swift in Sources */,
 				3203AD9228B63BF8001B6952 /* AbstractViewModel.swift in Sources */,
+				329B1B1628B86E7500BDAD9B /* SelfPracticeViewController.swift in Sources */,
 				32F16C0228B772C00073C47D /* ASControlTarget.swift in Sources */,
 				326CB1A228B6319700CC716B /* SceneDelegate.swift in Sources */,
 				3203ADF328B63DFB001B6952 /* UIViewController+Extension.swift in Sources */,

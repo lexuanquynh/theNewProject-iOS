@@ -16,9 +16,9 @@ class HomeViewController: BaseViewController {
     var homeViewModel: HomeViewModel!
     weak var coordinator: HomeCoordinator?
     
-    lazy var selfPraticeButton: ASButtonNode = {
+    lazy var selfPracticeButton: ASButtonNode = {
         let node = ASButtonNode()
-        node.setAttributedTitle(NSAttributedString(string: "Self pratice", attributes: [
+        node.setAttributedTitle(NSAttributedString(string: "Self practice", attributes: [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .medium)
         ]
@@ -73,7 +73,7 @@ class HomeViewController: BaseViewController {
     }()
     
     override func addSubviews() {
-        view.addSubnode(selfPraticeButton)
+        view.addSubnode(selfPracticeButton)
         view.addSubnode(playWithRobotButton)
         view.addSubnode(multiPlayerButton)
         view.addSubnode(HistoryButton)
@@ -105,7 +105,7 @@ class HomeViewController: BaseViewController {
     override func addActionsToSubviews() {
         // did tap submit button
         
-        selfPraticeButton.rx.tap.bind { [weak self] in
+        selfPracticeButton.rx.tap.bind { [weak self] in
             self?.selfPraticeAction()
         }.disposed(by: disposeBag)
         
@@ -137,9 +137,9 @@ class HomeViewController: BaseViewController {
         
         let fieldDiff = (10 as CGFloat).adaptiveWidth()
         
-        selfPraticeButton.frame = CGRect(x: x, y: y, width: view.frame.width-(2*x), height: height)
+        selfPracticeButton.frame = CGRect(x: x, y: y, width: view.frame.width-(2*x), height: height)
                 
-        playWithRobotButton.frame = CGRect(x: x, y: selfPraticeButton.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
+        playWithRobotButton.frame = CGRect(x: x, y: selfPracticeButton.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
         
         multiPlayerButton.frame = CGRect(x: x, y: playWithRobotButton.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
         HistoryButton.frame = CGRect(x: x, y: multiPlayerButton.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
@@ -147,7 +147,7 @@ class HomeViewController: BaseViewController {
     
     private func selfPraticeAction() {
         print("selfPraticeAction")
-    }    
+    }
     
     private func playWithRobotAction() {
         print("playWithRobotAction")
