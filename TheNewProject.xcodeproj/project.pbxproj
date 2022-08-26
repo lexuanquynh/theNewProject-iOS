@@ -84,6 +84,10 @@
 		329B1B0E28B867E400BDAD9B /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B0D28B867E400BDAD9B /* HomeRepository.swift */; };
 		329B1B1128B8682900BDAD9B /* HomeUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1028B8682900BDAD9B /* HomeUsecase.swift */; };
 		329B1B1628B86E7500BDAD9B /* SelfPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */; };
+		329B1B1928B872FE00BDAD9B /* HomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1828B872FE00BDAD9B /* HomeLocalDataSource.swift */; };
+		329B1B1B28B8730E00BDAD9B /* HomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1A28B8730E00BDAD9B /* HomeRemoteDataSource.swift */; };
+		329B1B1E28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1D28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift */; };
+		329B1B2028B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1F28B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift */; };
 		32F16BFD28B772C00073C47D /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */; };
 		32F16BFE28B772C00073C47D /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */; };
 		32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */; };
@@ -199,6 +203,10 @@
 		329B1B0D28B867E400BDAD9B /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		329B1B1028B8682900BDAD9B /* HomeUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsecase.swift; sourceTree = "<group>"; };
 		329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeViewController.swift; sourceTree = "<group>"; };
+		329B1B1828B872FE00BDAD9B /* HomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataSource.swift; sourceTree = "<group>"; };
+		329B1B1A28B8730E00BDAD9B /* HomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataSource.swift; sourceTree = "<group>"; };
+		329B1B1D28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractHomeLocalDataSource.swift; sourceTree = "<group>"; };
+		329B1B1F28B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractHomeRemoteDataSource.swift; sourceTree = "<group>"; };
 		32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
 		32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Rx.swift"; sourceTree = "<group>"; };
 		32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode2+Rx.swift"; sourceTree = "<group>"; };
@@ -349,6 +357,7 @@
 		3203AD9A28B63C67001B6952 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B1C28B8733D00BDAD9B /* Home */,
 				3203AE2528B70E00001B6952 /* Auth */,
 				3203AD9B28B63C71001B6952 /* AbstractLocalDataSource.swift */,
 				3203AD9D28B63C7E001B6952 /* AbstractRemoteDataSource.swift */,
@@ -638,6 +647,7 @@
 		3203AE1F28B70DB7001B6952 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B1728B872F500BDAD9B /* Home */,
 				3203AE2028B70DC0001B6952 /* Auth */,
 			);
 			path = DataSource;
@@ -816,6 +826,24 @@
 				329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */,
 			);
 			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B1728B872F500BDAD9B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B1828B872FE00BDAD9B /* HomeLocalDataSource.swift */,
+				329B1B1A28B8730E00BDAD9B /* HomeRemoteDataSource.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		329B1B1C28B8733D00BDAD9B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B1D28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift */,
+				329B1B1F28B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		32F16BEF28B772C00073C47D /* RxCocoa-Texture */ = {
@@ -1127,6 +1155,7 @@
 				3203AE1428B67CA3001B6952 /* AbstractAuthRepository.swift in Sources */,
 				3203ADD728B63CEF001B6952 /* KVLocalStorage.swift in Sources */,
 				3203AE2728B70E0D001B6952 /* AbstractAuthLocalDataSource.swift in Sources */,
+				329B1B2028B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift in Sources */,
 				3203ADEF28B63DFB001B6952 /* UIView+Extensions.swift in Sources */,
 				329B1B0228B85B9F00BDAD9B /* HomeViewModel.swift in Sources */,
 				3203ADF028B63DFB001B6952 /* UILabel+Extension.swift in Sources */,
@@ -1135,6 +1164,7 @@
 				3203ADD028B63CEF001B6952 /* ImageDownloader.swift in Sources */,
 				3203ADFF28B63EA6001B6952 /* ServerConfig.swift in Sources */,
 				3203AE0128B63EA6001B6952 /* ConfigComponents.swift in Sources */,
+				329B1B1E28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift in Sources */,
 				326CB1A428B6319700CC716B /* ViewController.swift in Sources */,
 				32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */,
 				3203AD8A28B63A10001B6952 /* BaseViewController.swift in Sources */,
@@ -1178,8 +1208,10 @@
 				32F16C0628B772C00073C47D /* Driver+ASSubscription.swift in Sources */,
 				3203ADCC28B63CEF001B6952 /* DownloadDataParser.swift in Sources */,
 				3203ADCB28B63CEF001B6952 /* Downloader.swift in Sources */,
+				329B1B1928B872FE00BDAD9B /* HomeLocalDataSource.swift in Sources */,
 				3203AD9928B63C50001B6952 /* AbstractRepository.swift in Sources */,
 				3203ADED28B63DFB001B6952 /* UIImageView+Extension.swift in Sources */,
+				329B1B1B28B8730E00BDAD9B /* HomeRemoteDataSource.swift in Sources */,
 				329B1B0B28B85D4100BDAD9B /* AbstractHomeRepository.swift in Sources */,
 				3203ADF428B63DFB001B6952 /* Optional+Extensions.swift in Sources */,
 				3203ADC528B63CEF001B6952 /* AbstractApiClient.swift in Sources */,

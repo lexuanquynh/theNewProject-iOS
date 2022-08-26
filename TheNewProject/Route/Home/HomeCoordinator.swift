@@ -17,16 +17,17 @@ class HomeCoordinator: Coordinator {
     }
 
     func start() {
+        
         let repository = HomeRepository(
-                localDataSource: AuthLocalDataSource(dbClient: DatabaseClient.shared),
-                remoteDataSource: AuthRemoteDataSource(apiClient: ApiClient.shared
+                localDataSource: HomeLocalDataSource(dbClient: DatabaseClient.shared),
+                remoteDataSource: HomeRemoteDataSource(apiClient: ApiClient.shared
             )
         )
+            
         let usecase = HomeUsecase(repository: repository)
         let viewModel = HomeViewModel(usecase: usecase)
         let vc = HomeViewController(viewModel: viewModel)
         vc.coordinator = self
-        
-        navigationController.pushViewController(vc, animated: true)
+        self.navigationController.viewControllers = [vc]
     }
 }
