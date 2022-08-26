@@ -8,7 +8,7 @@ We use Rx and Texture for UI.
 - Coordinator pattern for Navigation
 ## UI
 1. Login screen
-<img src="images/login.png" width="350">
+<img src="images/login_screen.png" width="350">
 
 ## Setup:
 1. Install latest version of xcode
