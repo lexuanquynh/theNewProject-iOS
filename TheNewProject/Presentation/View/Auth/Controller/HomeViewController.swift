@@ -29,8 +29,22 @@ class HomeViewController: BaseViewController {
         disableKeyboard(tappingView: view)
     }
     
+    override func initNavigationBar() {
+        super.initNavigationBar()
+        
+        self.navigationItem.title = "Home"
+    }
+    
+    override func addActionsToSubviews() {
+        // did tap submit button
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
     }
 }

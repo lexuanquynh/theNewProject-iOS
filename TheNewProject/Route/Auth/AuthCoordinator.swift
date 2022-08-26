@@ -33,4 +33,12 @@ class AuthCoordinator: Coordinator {
         let homeCoordinator = HomeCoordinator(navigationController: navigationController)
         homeCoordinator.start()
     }
+    
+    func navigateForgotPasswordScreen() {
+        print("Open the forget password screen")
+    }
+    
+    func navigateRegisterScreen() {
+        print("Open the register screen")
+    }
 }

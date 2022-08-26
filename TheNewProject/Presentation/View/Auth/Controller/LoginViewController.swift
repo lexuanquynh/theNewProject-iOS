@@ -60,11 +60,34 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .medium)
         ]
                                                   ), for: .normal)
-        
         node.borderWidth = 1
         node.borderColor = UIColor.white.cgColor
         node.backgroundColor = .systemBlue
         node.cornerRadius = 10
+        return node
+    }()
+    
+    lazy var fogetPasswordButton: ASButtonNode = {
+        let node = ASButtonNode()
+        node.setAttributedTitle(NSAttributedString(string: "Forget password?", attributes: [
+            NSAttributedString.Key.foregroundColor: UIColor.systemBlue,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .medium)
+        ]
+                                                  ), for: .normal)
+        node.borderWidth = 1
+        node.borderColor = UIColor.white.cgColor
+        return node
+    }()
+    
+    lazy var registerButton: ASButtonNode = {
+        let node = ASButtonNode()
+        node.setAttributedTitle(NSAttributedString(string: "Or Register New Account", attributes: [
+            NSAttributedString.Key.foregroundColor: UIColor.systemBlue,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17, weight: .medium)
+        ]
+                                                  ), for: .normal)
+        node.borderWidth = 1
+        node.borderColor = UIColor.white.cgColor
         return node
     }()
     
@@ -73,6 +96,8 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         view.addSubnode(emailNode)
         view.addSubnode(passwordNode)
         view.addSubnode(loginButton)
+        view.addSubnode(fogetPasswordButton)
+        view.addSubnode(registerButton)
     }
     
     // MARK: Constructors
@@ -104,6 +129,12 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
             self?.authenticateUser()
         }.disposed(by: disposeBag)
         
+        fogetPasswordButton.rx.tap.bind { [weak self] in
+            self?.forgotPassword()
+        }.disposed(by: disposeBag)
+        registerButton.rx.tap.bind { [weak self] in
+            self?.registerNewAccount()
+        }.disposed(by: disposeBag)
        
     }
     
@@ -130,6 +161,10 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         emailNode.frame = CGRect(x: x, y: logoNode.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: textHeight)
         passwordNode.frame = CGRect(x: x, y: emailNode.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: textHeight)
         loginButton.frame = CGRect(x: x, y: passwordNode.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
+        fogetPasswordButton.frame = CGRect(x: x, y: loginButton.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
+        registerButton.frame = CGRect(x: x, y: fogetPasswordButton.frame.maxY + fieldDiff, width: view.frame.width-(2*x), height: height)
+        
+        
     }
     
     // MARK: UITextFieldDelegate
@@ -144,6 +179,14 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     //MARK: Authentication Process
     func authenticateUser() {
         coordinator?.navigateHomeScreen()
+    }
+    
+    func forgotPassword() {
+        coordinator?.navigateForgotPasswordScreen()
+    }
+    
+    func registerNewAccount() {
+        coordinator?.navigateRegisterScreen()
     }
 }
 
