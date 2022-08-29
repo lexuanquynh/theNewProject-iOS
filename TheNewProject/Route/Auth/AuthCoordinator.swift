@@ -31,7 +31,7 @@ class AuthCoordinator: Coordinator {
     
     func navigateHomeScreen() {
         let homeCoordinator = HomeCoordinator(navigationController: navigationController)
-        homeCoordinator.start()        
+        homeCoordinator.start()
     }
     
     func navigateForgotPasswordScreen() {

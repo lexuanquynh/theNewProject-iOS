@@ -26,6 +26,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _window = window else { return }
         _window.windowScene = windowScene
         
+//        let textureViewController = TextureViewController()
+//        let uiKitViewController = UIKitViewController(nibName: "UIKitViewController", bundle: nil)
         let navigationController = UINavigationController()
         _window.rootViewController = navigationController
         rootCoordinator = AuthCoordinator(navigationController: navigationController)

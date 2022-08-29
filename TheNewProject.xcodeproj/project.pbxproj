@@ -88,6 +88,25 @@
 		329B1B1B28B8730E00BDAD9B /* HomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1A28B8730E00BDAD9B /* HomeRemoteDataSource.swift */; };
 		329B1B1E28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1D28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift */; };
 		329B1B2028B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B1F28B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift */; };
+		329B1B2228BC9B2800BDAD9B /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B2128BC9B2800BDAD9B /* DemoViewController.swift */; };
+		329B1B2428BC9B7000BDAD9B /* ImageDelayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B2328BC9B7000BDAD9B /* ImageDelayer.swift */; };
+		329B1B2928BC9C6D00BDAD9B /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B2728BC9C6D00BDAD9B /* UIKitViewController.swift */; };
+		329B1B2A28BC9C6D00BDAD9B /* UIKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B1B2828BC9C6D00BDAD9B /* UIKitViewController.xib */; };
+		329B1B2D28BC9CC800BDAD9B /* UIKitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B2B28BC9CC800BDAD9B /* UIKitCollectionViewCell.swift */; };
+		329B1B2E28BC9CC800BDAD9B /* UIKitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B1B2C28BC9CC800BDAD9B /* UIKitCollectionViewCell.xib */; };
+		329B1B3428BCAC8B00BDAD9B /* SelfPracticeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B3328BCAC8B00BDAD9B /* SelfPracticeCoordinator.swift */; };
+		329B1B3728BCACE300BDAD9B /* AbstractSelfPracticeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B3628BCACE300BDAD9B /* AbstractSelfPracticeLocalDataSource.swift */; };
+		329B1B3928BCACF400BDAD9B /* AbstractSelfPracticeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B3828BCACF400BDAD9B /* AbstractSelfPracticeRemoteDataSource.swift */; };
+		329B1B3C28BCADAE00BDAD9B /* SelfPracticeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B3B28BCADAE00BDAD9B /* SelfPracticeLocalDataSource.swift */; };
+		329B1B3E28BCADBA00BDAD9B /* SelfPracticeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B3D28BCADBA00BDAD9B /* SelfPracticeRemoteDataSource.swift */; };
+		329B1B4128BCAE3000BDAD9B /* SelfPracticeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B4028BCAE3000BDAD9B /* SelfPracticeRepository.swift */; };
+		329B1B4428BCAE5D00BDAD9B /* AbstractSelfPracticeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B4328BCAE5D00BDAD9B /* AbstractSelfPracticeRepository.swift */; };
+		329B1B4928BCAEB200BDAD9B /* AbstractSelfPracticeUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B4828BCAEB200BDAD9B /* AbstractSelfPracticeUsecase.swift */; };
+		329B1B4C28BCAEEA00BDAD9B /* SelfPracticeUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B4B28BCAEEA00BDAD9B /* SelfPracticeUsecase.swift */; };
+		329B1B4F28BCAF5200BDAD9B /* AbstractSelfPracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B4E28BCAF5200BDAD9B /* AbstractSelfPracticeViewModel.swift */; };
+		329B1B5228BCAF6A00BDAD9B /* SelfPracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B5128BCAF6A00BDAD9B /* SelfPracticeViewModel.swift */; };
+		329B1B5528BCB76000BDAD9B /* SelfPracticeCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B5428BCB76000BDAD9B /* SelfPracticeCellNode.swift */; };
+		329B1B5828BCB7E100BDAD9B /* SelfPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B1B5728BCB7E100BDAD9B /* SelfPractice.swift */; };
 		32F16BFD28B772C00073C47D /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */; };
 		32F16BFE28B772C00073C47D /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */; };
 		32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */; };
@@ -207,6 +226,25 @@
 		329B1B1A28B8730E00BDAD9B /* HomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataSource.swift; sourceTree = "<group>"; };
 		329B1B1D28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractHomeLocalDataSource.swift; sourceTree = "<group>"; };
 		329B1B1F28B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractHomeRemoteDataSource.swift; sourceTree = "<group>"; };
+		329B1B2128BC9B2800BDAD9B /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		329B1B2328BC9B7000BDAD9B /* ImageDelayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDelayer.swift; sourceTree = "<group>"; };
+		329B1B2728BC9C6D00BDAD9B /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		329B1B2828BC9C6D00BDAD9B /* UIKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitViewController.xib; sourceTree = "<group>"; };
+		329B1B2B28BC9CC800BDAD9B /* UIKitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCollectionViewCell.swift; sourceTree = "<group>"; };
+		329B1B2C28BC9CC800BDAD9B /* UIKitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitCollectionViewCell.xib; sourceTree = "<group>"; };
+		329B1B3328BCAC8B00BDAD9B /* SelfPracticeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeCoordinator.swift; sourceTree = "<group>"; };
+		329B1B3628BCACE300BDAD9B /* AbstractSelfPracticeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSelfPracticeLocalDataSource.swift; sourceTree = "<group>"; };
+		329B1B3828BCACF400BDAD9B /* AbstractSelfPracticeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSelfPracticeRemoteDataSource.swift; sourceTree = "<group>"; };
+		329B1B3B28BCADAE00BDAD9B /* SelfPracticeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeLocalDataSource.swift; sourceTree = "<group>"; };
+		329B1B3D28BCADBA00BDAD9B /* SelfPracticeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeRemoteDataSource.swift; sourceTree = "<group>"; };
+		329B1B4028BCAE3000BDAD9B /* SelfPracticeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeRepository.swift; sourceTree = "<group>"; };
+		329B1B4328BCAE5D00BDAD9B /* AbstractSelfPracticeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSelfPracticeRepository.swift; sourceTree = "<group>"; };
+		329B1B4828BCAEB200BDAD9B /* AbstractSelfPracticeUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSelfPracticeUsecase.swift; sourceTree = "<group>"; };
+		329B1B4B28BCAEEA00BDAD9B /* SelfPracticeUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeUsecase.swift; sourceTree = "<group>"; };
+		329B1B4E28BCAF5200BDAD9B /* AbstractSelfPracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSelfPracticeViewModel.swift; sourceTree = "<group>"; };
+		329B1B5128BCAF6A00BDAD9B /* SelfPracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeViewModel.swift; sourceTree = "<group>"; };
+		329B1B5428BCB76000BDAD9B /* SelfPracticeCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPracticeCellNode.swift; sourceTree = "<group>"; };
+		329B1B5728BCB7E100BDAD9B /* SelfPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPractice.swift; sourceTree = "<group>"; };
 		32F16BF128B772C00073C47D /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
 		32F16BF228B772C00073C47D /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Rx.swift"; sourceTree = "<group>"; };
 		32F16BF328B772C00073C47D /* ASTextNode2+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode2+Rx.swift"; sourceTree = "<group>"; };
@@ -270,6 +308,7 @@
 		3203AD8728B639F0001B6952 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B2F28BC9F9500BDAD9B /* Examples */,
 				329B1B1428B86E3300BDAD9B /* SelfPractice */,
 				329B1B1228B86E1600BDAD9B /* Home */,
 				3203AE0328B66DCD001B6952 /* Auth */,
@@ -289,6 +328,7 @@
 		3203AD8B28B63B84001B6952 /* Route */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B3228BCAC6C00BDAD9B /* SelfPractice */,
 				329B1AFD28B85ADE00BDAD9B /* Home */,
 				3203AE0728B6759A001B6952 /* Auth */,
 				3203AD8C28B63B92001B6952 /* Coordinator */,
@@ -307,6 +347,7 @@
 		3203AD8F28B63BD2001B6952 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B5028BCAF5F00BDAD9B /* SelfPractice */,
 				329B1B0028B85B9300BDAD9B /* Home */,
 				3203AE1528B67CCA001B6952 /* Auth */,
 				3203AD9028B63BDE001B6952 /* Abstraction */,
@@ -317,6 +358,7 @@
 		3203AD9028B63BDE001B6952 /* Abstraction */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B4D28BCAF3F00BDAD9B /* SelfPractice */,
 				329B1B0328B85BB700BDAD9B /* Home */,
 				3203AE1628B67CF2001B6952 /* Auth */,
 				3203AD9128B63BF8001B6952 /* AbstractViewModel.swift */,
@@ -337,6 +379,7 @@
 		3203AD9428B63C1C001B6952 /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B4728BCAE9C00BDAD9B /* SelfPractice */,
 				329B1B0628B85C0500BDAD9B /* Home */,
 				3203AE0F28B67C5B001B6952 /* Auth */,
 				3203AD9528B63C24001B6952 /* AbstractUsecase.swift */,
@@ -347,6 +390,7 @@
 		3203AD9728B63C44001B6952 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B4228BCAE5200BDAD9B /* SelfPractice */,
 				329B1B0928B85D3200BDAD9B /* Home */,
 				3203AE1228B67C9B001B6952 /* Auth */,
 				3203AD9828B63C50001B6952 /* AbstractRepository.swift */,
@@ -357,6 +401,7 @@
 		3203AD9A28B63C67001B6952 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B3528BCACA800BDAD9B /* SelfPractice */,
 				329B1B1C28B8733D00BDAD9B /* Home */,
 				3203AE2528B70E00001B6952 /* Auth */,
 				3203AD9B28B63C71001B6952 /* AbstractLocalDataSource.swift */,
@@ -571,6 +616,7 @@
 		3203AE0A28B67BFD001B6952 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B5628BCB7D200BDAD9B /* Entity */,
 				3203AE1F28B70DB7001B6952 /* DataSource */,
 				3203AE1B28B67DF3001B6952 /* Repository */,
 				3203AE0B28B67C13001B6952 /* Usecase */,
@@ -581,6 +627,7 @@
 		3203AE0B28B67C13001B6952 /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B4A28BCAECA00BDAD9B /* SelfPractice */,
 				329B1B0F28B8681F00BDAD9B /* Home */,
 				3203AE0C28B67C20001B6952 /* Auth */,
 			);
@@ -630,6 +677,7 @@
 		3203AE1B28B67DF3001B6952 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B3F28BCAE1E00BDAD9B /* SelfPractice */,
 				329B1B0C28B867DA00BDAD9B /* Home */,
 				3203AE1C28B67DFB001B6952 /* Auth */,
 			);
@@ -647,6 +695,7 @@
 		3203AE1F28B70DB7001B6952 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B3A28BCAD1A00BDAD9B /* SelfPractice */,
 				329B1B1728B872F500BDAD9B /* Home */,
 				3203AE2028B70DC0001B6952 /* Auth */,
 			);
@@ -823,6 +872,7 @@
 		329B1B1428B86E3300BDAD9B /* SelfPractice */ = {
 			isa = PBXGroup;
 			children = (
+				329B1B5328BCB75700BDAD9B /* Cell */,
 				329B1B1528B86E7500BDAD9B /* SelfPracticeViewController.swift */,
 			);
 			path = SelfPractice;
@@ -844,6 +894,125 @@
 				329B1B1F28B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		329B1B2F28BC9F9500BDAD9B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B2328BC9B7000BDAD9B /* ImageDelayer.swift */,
+				329B1B3028BCA71400BDAD9B /* Texture */,
+				329B1B3128BCA71C00BDAD9B /* UIKits */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		329B1B3028BCA71400BDAD9B /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B2128BC9B2800BDAD9B /* DemoViewController.swift */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		329B1B3128BCA71C00BDAD9B /* UIKits */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B2B28BC9CC800BDAD9B /* UIKitCollectionViewCell.swift */,
+				329B1B2C28BC9CC800BDAD9B /* UIKitCollectionViewCell.xib */,
+				329B1B2728BC9C6D00BDAD9B /* UIKitViewController.swift */,
+				329B1B2828BC9C6D00BDAD9B /* UIKitViewController.xib */,
+			);
+			path = UIKits;
+			sourceTree = "<group>";
+		};
+		329B1B3228BCAC6C00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B3328BCAC8B00BDAD9B /* SelfPracticeCoordinator.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B3528BCACA800BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B3628BCACE300BDAD9B /* AbstractSelfPracticeLocalDataSource.swift */,
+				329B1B3828BCACF400BDAD9B /* AbstractSelfPracticeRemoteDataSource.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B3A28BCAD1A00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B3B28BCADAE00BDAD9B /* SelfPracticeLocalDataSource.swift */,
+				329B1B3D28BCADBA00BDAD9B /* SelfPracticeRemoteDataSource.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B3F28BCAE1E00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B4028BCAE3000BDAD9B /* SelfPracticeRepository.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B4228BCAE5200BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B4328BCAE5D00BDAD9B /* AbstractSelfPracticeRepository.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B4728BCAE9C00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B4828BCAEB200BDAD9B /* AbstractSelfPracticeUsecase.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B4A28BCAECA00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B4B28BCAEEA00BDAD9B /* SelfPracticeUsecase.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B4D28BCAF3F00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B4E28BCAF5200BDAD9B /* AbstractSelfPracticeViewModel.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B5028BCAF5F00BDAD9B /* SelfPractice */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B5128BCAF6A00BDAD9B /* SelfPracticeViewModel.swift */,
+			);
+			path = SelfPractice;
+			sourceTree = "<group>";
+		};
+		329B1B5328BCB75700BDAD9B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B5428BCB76000BDAD9B /* SelfPracticeCellNode.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		329B1B5628BCB7D200BDAD9B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				329B1B5728BCB7E100BDAD9B /* SelfPractice.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		32F16BEF28B772C00073C47D /* RxCocoa-Texture */ = {
@@ -1007,6 +1176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				326CB1AC28B6319800CC716B /* LaunchScreen.storyboard in Resources */,
+				329B1B2E28BC9CC800BDAD9B /* UIKitCollectionViewCell.xib in Resources */,
+				329B1B2A28BC9C6D00BDAD9B /* UIKitViewController.xib in Resources */,
 				326CB1A928B6319800CC716B /* Assets.xcassets in Resources */,
 				326CB1A728B6319700CC716B /* Main.storyboard in Resources */,
 			);
@@ -1148,31 +1319,42 @@
 				3203AD9E28B63C7E001B6952 /* AbstractRemoteDataSource.swift in Sources */,
 				3203AE0928B675A7001B6952 /* AuthCoordinator.swift in Sources */,
 				3203ADFD28B63EA6001B6952 /* AuthCredential.swift in Sources */,
+				329B1B3428BCAC8B00BDAD9B /* SelfPracticeCoordinator.swift in Sources */,
+				329B1B5228BCAF6A00BDAD9B /* SelfPracticeViewModel.swift in Sources */,
 				3203ADEE28B63DFB001B6952 /* UIColor+Extension.swift in Sources */,
 				3203AE2428B70DDF001B6952 /* AuthLocalDataSource.swift in Sources */,
+				329B1B3728BCACE300BDAD9B /* AbstractSelfPracticeLocalDataSource.swift in Sources */,
 				3203ADD628B63CEF001B6952 /* UserSessionDataClient.swift in Sources */,
 				3203ADC728B63CEF001B6952 /* Parameterizable.swift in Sources */,
 				3203AE1428B67CA3001B6952 /* AbstractAuthRepository.swift in Sources */,
+				329B1B4F28BCAF5200BDAD9B /* AbstractSelfPracticeViewModel.swift in Sources */,
 				3203ADD728B63CEF001B6952 /* KVLocalStorage.swift in Sources */,
 				3203AE2728B70E0D001B6952 /* AbstractAuthLocalDataSource.swift in Sources */,
 				329B1B2028B8736A00BDAD9B /* AbstractHomeRemoteDataSource.swift in Sources */,
 				3203ADEF28B63DFB001B6952 /* UIView+Extensions.swift in Sources */,
+				329B1B3E28BCADBA00BDAD9B /* SelfPracticeRemoteDataSource.swift in Sources */,
 				329B1B0228B85B9F00BDAD9B /* HomeViewModel.swift in Sources */,
 				3203ADF028B63DFB001B6952 /* UILabel+Extension.swift in Sources */,
 				32F16C0728B772C00073C47D /* ASTextNode+Rx.swift in Sources */,
 				3203AE1828B67D11001B6952 /* AbstractAuthViewModel.swift in Sources */,
 				3203ADD028B63CEF001B6952 /* ImageDownloader.swift in Sources */,
 				3203ADFF28B63EA6001B6952 /* ServerConfig.swift in Sources */,
+				329B1B2228BC9B2800BDAD9B /* DemoViewController.swift in Sources */,
 				3203AE0128B63EA6001B6952 /* ConfigComponents.swift in Sources */,
 				329B1B1E28B8735700BDAD9B /* AbstractHomeLocalDataSource.swift in Sources */,
 				326CB1A428B6319700CC716B /* ViewController.swift in Sources */,
+				329B1B2928BC9C6D00BDAD9B /* UIKitViewController.swift in Sources */,
 				32F16BFF28B772C00073C47D /* ASTextNode2+Rx.swift in Sources */,
 				3203AD8A28B63A10001B6952 /* BaseViewController.swift in Sources */,
 				3203ADE128B63D23001B6952 /* AdaptiveLayoutConstraint.swift in Sources */,
+				329B1B5528BCB76000BDAD9B /* SelfPracticeCellNode.swift in Sources */,
 				32F16C0528B772C00073C47D /* ASNetworkImageNode+Rx.swift in Sources */,
 				329B1B0528B85BC400BDAD9B /* AbstractHomeViewModel.swift in Sources */,
+				329B1B3928BCACF400BDAD9B /* AbstractSelfPracticeRemoteDataSource.swift in Sources */,
+				329B1B2D28BC9CC800BDAD9B /* UIKitCollectionViewCell.swift in Sources */,
 				3203ADCF28B63CEF001B6952 /* AbstractDownloaderClient.swift in Sources */,
 				3203AE1E28B67E04001B6952 /* AuthRepository.swift in Sources */,
+				329B1B4128BCAE3000BDAD9B /* SelfPracticeRepository.swift in Sources */,
 				329B1AFF28B85B0D00BDAD9B /* HomeCoordinator.swift in Sources */,
 				3203AD8E28B63B9C001B6952 /* Coordinator.swift in Sources */,
 				3203AD9628B63C24001B6952 /* AbstractUsecase.swift in Sources */,
@@ -1188,6 +1370,7 @@
 				326CB1A028B6319700CC716B /* AppDelegate.swift in Sources */,
 				3203ADD428B63CEF001B6952 /* AbstractUserSessionDataClient.swift in Sources */,
 				3203ADC628B63CEF001B6952 /* ApiClient.swift in Sources */,
+				329B1B4928BCAEB200BDAD9B /* AbstractSelfPracticeUsecase.swift in Sources */,
 				32F16C0128B772C00073C47D /* ASButtonNode+Rx.swift in Sources */,
 				3203ADF528B63DFB001B6952 /* Codable+Extension.swift in Sources */,
 				3203ADD528B63CEF001B6952 /* AbstractLocalStorageIntereactor.swift in Sources */,
@@ -1197,13 +1380,17 @@
 				326CB1A228B6319700CC716B /* SceneDelegate.swift in Sources */,
 				3203ADF328B63DFB001B6952 /* UIViewController+Extension.swift in Sources */,
 				3203AE0028B63EA6001B6952 /* AppTheme.swift in Sources */,
+				329B1B2428BC9B7000BDAD9B /* ImageDelayer.swift in Sources */,
 				3203ADF228B63DFB001B6952 /* UINavigationController+Extension.swift in Sources */,
 				3203ADCE28B63CEF001B6952 /* DownloaderClient.swift in Sources */,
 				3203ADE228B63D23001B6952 /* CGFloat+Extension.swift in Sources */,
+				329B1B4C28BCAEEA00BDAD9B /* SelfPracticeUsecase.swift in Sources */,
 				3203ADDF28B63D23001B6952 /* AppLogger.swift in Sources */,
 				3203AE0628B66DF9001B6952 /* LoginViewController.swift in Sources */,
 				32F16BFE28B772C00073C47D /* ASImageNode+Rx.swift in Sources */,
 				3203AE1128B67C6C001B6952 /* AbstractAuthUsecase.swift in Sources */,
+				329B1B4428BCAE5D00BDAD9B /* AbstractSelfPracticeRepository.swift in Sources */,
+				329B1B5828BCB7E100BDAD9B /* SelfPractice.swift in Sources */,
 				3203ADC928B63CEF001B6952 /* QueueManager.swift in Sources */,
 				32F16C0628B772C00073C47D /* Driver+ASSubscription.swift in Sources */,
 				3203ADCC28B63CEF001B6952 /* DownloadDataParser.swift in Sources */,
@@ -1218,6 +1405,7 @@
 				3203AE0228B63EA6001B6952 /* AppConfig.swift in Sources */,
 				3203ADCD28B63CEF001B6952 /* AbstractDownloader.swift in Sources */,
 				3203AE1A28B67D3A001B6952 /* AuthViewModel.swift in Sources */,
+				329B1B3C28BCADAE00BDAD9B /* SelfPracticeLocalDataSource.swift in Sources */,
 				3203ADD328B63CEF001B6952 /* KVLocalSorageIntereactor.swift in Sources */,
 				3203ADCA28B63CEF001B6952 /* ApiRequest.swift in Sources */,
 				32F16C0328B772C00073C47D /* ASDisplayNode+Rx.swift in Sources */,

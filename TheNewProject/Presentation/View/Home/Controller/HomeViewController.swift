@@ -14,7 +14,7 @@ import ASTextFieldNode
 
 class HomeViewController: BaseViewController {
     var homeViewModel: HomeViewModel!
-    weak var coordinator: HomeCoordinator?
+    var coordinator: HomeCoordinator?
     
     lazy var selfPracticeButton: ASButtonNode = {
         let node = ASButtonNode()
@@ -146,7 +146,7 @@ class HomeViewController: BaseViewController {
     }
     
     private func selfPraticeAction() {
-        print("selfPraticeAction")
+        coordinator?.navigateSelfPracticeScreen()       
     }
     
     private func playWithRobotAction() {

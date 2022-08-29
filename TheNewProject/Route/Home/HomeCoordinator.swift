@@ -17,7 +17,6 @@ class HomeCoordinator: Coordinator {
     }
 
     func start() {
-        
         let repository = HomeRepository(
                 localDataSource: HomeLocalDataSource(dbClient: DatabaseClient.shared),
                 remoteDataSource: HomeRemoteDataSource(apiClient: ApiClient.shared
@@ -29,5 +28,11 @@ class HomeCoordinator: Coordinator {
         let vc = HomeViewController(viewModel: viewModel)
         vc.coordinator = self
         self.navigationController.viewControllers = [vc]
+    }
+    
+    func navigateSelfPracticeScreen() {
+        let selfPracticeCoordinator = SelfPracticeCoordinator(navigationController: navigationController)
+        
+        selfPracticeCoordinator.start()
     }
 }
